@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.Park's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Phenomenal Park!"
+    />
+    <meta name="author" content="Spark" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/c46bacb8d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img class="navbar__logo--bwr" src="imgs/favicon.png" />
+        <a href="#">S.Park</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My Works</li>
+          <li class="navbar__menu__item">Testimonial</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <img
+        src="imgs/profile.png"
+        alt="S.Park's profile photo"
+        class="home__avatar"
+      />
+      <h1 class="home__title">Hello, I'm Phenomenal Park!</h1>
+      <h2 class="home__description"></h2>
+      <button class="home__contact">Contact Me</button>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>Blah Blah</p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="major__title">Front-end</div>
+          <p class="major__description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br />React, Vue, Web APIs
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <div class="major__title">Mobile</div>
+          <p class="major__description">
+            Android, iOS, React Native, Flutter,
+            <br />Java, Swift, Kotlin
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="major__title">Back-end</div>
+          <p class="major__description">
+            Java, JavaScript, Go, NodeJS,
+            <br />Rest APIs, GraphGL
+          </p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="imgs/jobs/logo-kba.png" alt="kba" class="job__logo" />
+          <p class="job__name"></p>
+          <p class="job__period"></p>
+        </div>
+        <div class="job">
+          <img src="" alt="" class="job__logo" />
+          <p class="job__name"></p>
+          <p class="job__period"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        Experience with all phases of the software life-cycle. Passion for
+        learning new technologies.
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title"></h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
+              <li><span>Android Studio Code</span></li>
+              <li><span>iOS development tools</span></li>
+              <li><span>Sketch app</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Scrum Master</span></li>
+              <li><span>Math</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work"></section>
+
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
+</html>
