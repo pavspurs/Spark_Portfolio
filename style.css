@@ -4,10 +4,10 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
+  --col₩or-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-black: #000;
-  --color-dark-grey: #202020;
+  --color-dark-grey: #404040;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-indigo: #000b27;
@@ -169,6 +169,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -197,6 +201,10 @@ p {
   color: var(--color-dark-grey);
 }
 
+.major__title {
+  font-weight: var(--weight-bold);
+}
+
 .major__icon i {
   transition: all 250ms ease;
 }
@@ -208,16 +216,29 @@ p {
 
 .major__description {
   font-size: var(--font-small);
+  margin-top: 8px;
+}
+
+.about__jobs {
+  display: flex;
+  justify-content: center;
 }
 
 .job {
   display: flex;
   align-items: center;
+  margin: 0 0 10px 80px;
 }
 
-.job__logo {
-  width: 30px;
-  height: 30px;
+.job1__logo {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.job2__logo {
+  width: 46px;
+  height: 46px;
   text-align: center;
 }
 
@@ -226,15 +247,70 @@ p {
   text-align: left;
 }
 
-.job__name,
-.job__period {
-  color: var(--color-grey);
-}
-
 .job__name {
   font-size: var(--font-small);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-dark-grey);
 }
 
 .job__period {
   font-size: var(--font-micro);
+  color: var(--color-grey);
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 24px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 16px;
 }
