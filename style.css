@@ -149,8 +149,8 @@ p {
 }
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
-  right: 32px;
+  top: 36px;
+  right: 26px;
   font-size: 24px;
   color: var(--color-dark-blue);
   display: none;
@@ -553,8 +553,6 @@ span {
 
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
-    right: 30px;
-    top: 35px;
     display: block;
   }
   #navbar {
