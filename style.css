@@ -3,7 +3,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
+  --color-dark-white: #d3cccc;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-black: #000;
@@ -106,12 +106,19 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-light-white);
+  background-color: var(--color-white);
   align-items: center;
   color: var(--color-black);
   padding: 16px;
+  transition: all 1000ms ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-white);
 }
 
 .navbar__menu {
@@ -151,9 +158,9 @@ p {
 #home {
   background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 128px;
   text-align: center;
 }
-
 .home__avatar {
   width: 250px;
   height: 250px;
