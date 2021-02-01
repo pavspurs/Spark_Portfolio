@@ -542,6 +542,13 @@ span {
 
 /* PC: 1024(960)px, Tablet: 768px, Mobile: 320px */
 
+@media screen and (max-width: 956px) {
+  .category__btn {
+    width: 300px;
+    margin: 5px 100px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     right: 30px;
@@ -601,15 +608,9 @@ span {
   }
   .category__btn {
     margin: 5px 0;
+    padding: 8px 0;
   }
   .testimonial__speech-bubble p {
     font-size: var(--font-small);
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 956px) {
-  .category__btn {
-    width: 300px;
-    margin: 5px 100px;
   }
 }
