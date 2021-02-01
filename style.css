@@ -138,6 +138,14 @@ p {
   background-color: var(--color-dark-blue);
   color: var(--color-light-white);
 }
+.navbar__toggle-btn {
+  position: absolute;
+  top: 35px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-dark-blue);
+  display: none;
+}
 
 /* Home */
 #home {
@@ -180,6 +188,10 @@ p {
 }
 
 /* About */
+#about h1,
+p {
+  color: var(--color-indigo);
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -520,52 +532,63 @@ span {
   color: var(--color-indigo);
 }
 
-/* PC: 1024(960)px, Tablet: 768px, Mobile: 320px 
+/* PC: 1024(960)px, Tablet: 768px, Mobile: 320px */
 
-@media screen and (max-width: 960px) {
-  .section__container {
-  }
-}
-  
 @media screen and (max-width: 768px) {
-  .section__container {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    height: 103px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__logo {
+    margin-top: 19px;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__majors {
+    flex-direction: column;
+  }
+  .major {
+    margin: 20px 0;
+  }
+  .about__jobs {
+    flex-direction: column;
+  }
+  .job1__logo {
+    margin-right: 6.5px;
+  }
+  .job__description {
+    margin-bottom: 20px;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .project {
+    flex-grow: 1;
+  }
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .job {
+    margin-left: 30px;
   }
   .category__btn {
-  width: 320px;
-  margin: 5px 4%;
-  justify-content: center;
+    margin: 5px 0;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
   .section__container {
   }
 }
-
-
-@media screen and (max-width: 768px) {
-  .section {
-    padding: 0 10px;
-  }
-  .work__categories {
-    flex-direction: column;
-    margin: 40px 0px;
-  }
-  .category__btn {
-    width: 320px;
-    margin: 5px 4%;
-    justify-content: center;
-  }
-  .work__projects {
-    width: 320px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  .project {
-    width: 320px;
-    height: 210px;
-    margin: 0;
-  }
-}
-
-*/
