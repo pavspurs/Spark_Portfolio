@@ -536,6 +536,7 @@ span {
 
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
+    right: 30px;
     display: block;
   }
   #navbar {
