@@ -66,6 +66,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography */
@@ -287,6 +288,11 @@ p {
 
 #skills {
   background-color: var(--color-yellow);
+}
+
+#skills h2,
+#skills p {
+  margin-bottom: 20px;
 }
 
 .skillset {
@@ -524,7 +530,11 @@ span {
 }
 
 .contact__title {
-  margin: 32px 0;
+  margin: 24px 0;
+}
+
+.contact__email {
+  margin-bottom: 32px;
 }
 
 .contact__links {
@@ -572,6 +582,10 @@ span {
   .navbar__menu.open {
     display: block;
   }
+  .section {
+    padding: 20px;
+    padding-top: 128px;
+  }
   .about__majors {
     flex-direction: column;
   }
@@ -596,9 +610,6 @@ span {
   }
   .skillset {
     flex-direction: column;
-  }
-  .section {
-    padding: 25px;
   }
   .category__btn {
     width: 240px;
