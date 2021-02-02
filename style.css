@@ -188,7 +188,7 @@ p {
 
 /* Section Common */
 .section {
-  padding: 50px;
+  padding: 48px;
   text-align: center;
   margin: auto;
 }
@@ -504,13 +504,16 @@ span {
 }
 
 .testimonial__speech-bubble {
+  height: 100%;
+  display: table;
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
-.testimonial__speech-bubble p {
+.testimonial__description {
   color: var(--color-grey);
+  vertical-align: middle;
 }
 
 .testimonial__speech-bubble a {
@@ -583,9 +586,9 @@ span {
     display: block;
   }
   .section {
-    padding: 20px;
-    padding-top: 128px;
+    padding: 24px;
   }
+
   .about__majors {
     flex-direction: column;
   }
@@ -601,6 +604,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 12px;
   }
   .job1__logo {
     margin-right: 6.5px;
@@ -618,8 +622,8 @@ span {
     flex-grow: 1;
   }
   .testimonial__avatar {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
   .job {
     margin-left: 30px;
@@ -628,6 +632,18 @@ span {
     margin: 5px 0;
     padding: 8px 0;
   }
+  .testimonial__avatar:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  .testimonial__avatar:nth-child(even) {
+    margin-left: 20px;
+  }
+
+  .testimonial__speech-bubble {
+    padding: 18px;
+  }
+
   .testimonial__speech-bubble p {
     font-size: var(--font-small);
   }

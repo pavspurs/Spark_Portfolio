@@ -20,6 +20,18 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   }
   scrollIntoView(link);
+
+  const scrollMove = document.querySelector(link);
+  const top =
+    scrollMove.offsetTop - navbarHeight < 0
+      ? 0
+      : scrollMove.offsetTop - navbarHeight;
+
+  window.scrollTo({
+    top: top,
+    left: 0,
+    behavior: "smooth",
+  });
 });
 
 // Handle click on "contact me" button on home page
