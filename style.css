@@ -505,8 +505,8 @@ span {
 
 .testimonial__speech-bubble {
   height: 100%;
-  display: table;
-  padding: 18px;
+  line-height: 24px;
+  padding: 24px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
