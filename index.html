@@ -48,14 +48,16 @@
 
     <!-- Home -->
     <section id="home" class="section">
-      <img
-        src="imgs/profile.png"
-        alt="S.Park's profile photo"
-        class="home__avatar"
-      />
-      <h1 class="home__title">Hello, <br />I'm Phenomenal Park!</h1>
-      <h2 class="home__description"></h2>
-      <button class="home__contact">Contact Me</button>
+      <div class="home__container">
+        <img
+          src="imgs/profile.png"
+          alt="S.Park's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, <br />I'm Phenomenal Park!</h1>
+        <h2 class="home__description"></h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
 
     <!-- About -->
@@ -209,21 +211,21 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-          <button class="category__btn active">
+          <button class="category__btn selected" data-filter="*">
             <span class="category__name">All</span
             ><span class="category__count">8</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="front-end">
             <span class="category__name">Front-end</span
             ><span class="category__count">3</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="back-end">
             <span class="category__name">Back-end</span
-            ><span class="category__count">3</span>
-          </button>
-          <button class="category__btn">
-            <span class="category__name">Mobile</span
             ><span class="category__count">2</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            <span class="category__name">Mobile</span
+            ><span class="category__count">3</span>
           </button>
         </div>
 
@@ -244,109 +246,81 @@
               <span>Collect my favorite videos <br />from Youtube</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="front-end" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project1.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 1"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 1</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="front-end" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project2.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 2"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 2</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="back-end" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project3.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 3"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 3</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="back-end" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project4.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 4"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 4</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="mobile" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project5.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 5"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 5</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="mobile" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project6.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 6"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 6</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
-          <a
-            href="http://github.com/pavspurs/Fav_NiziU"
-            class="project"
-            target="blank"
-          >
+          <a href="#" class="project" data-type="mobile" target="blank">
             <img
-              src="imgs/projects/best-videos.png"
+              src="imgs/projects/project7.png"
               class="project__img"
-              alt="Best Videos"
+              alt="Project 7"
             />
             <div class="project__description">
-              <h3>Best Videos</h3>
-              <span>Collect my favorite videos <br />from Youtube</span>
+              <h3>Project 7</h3>
+              <span>Sample Project <br />for my Portfolio Website</span>
             </div>
           </a>
         </div>
@@ -424,5 +398,10 @@
         2021 Phenomenal S.Park - All rights reversed
       </p>
     </section>
+
+    <!-- Arrow Up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
 </html>
